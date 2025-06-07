@@ -1,0 +1,323 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navigation */
+.navbar {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-brand h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+  color: #fff;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('hero-background.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hero-sage,
+.hero-horse {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.hero-title h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 48px;
+}
+
+.blue {
+  color: #0033cc;
+}
+
+.red {
+  color: #cc0000;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.tagline {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.hero-contact {
+  margin-top: 15px;
+}
+
+.contact-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.call-now-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.call-now-btn:hover {
+  background: #0056b3;
+}
+
+/* Products Section */
+.products-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fdfdfd;
+}
+
+.products-section h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.cylinder-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cylinder {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.cylinder img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.cylinder p {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.cylinder:hover {
+  transform: translateY(-5px);
+}
+
+.gaspoint-lineup {
+  margin-top: 30px;
+}
+
+.gaspoint-lineup img {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Booking Section */
+.booking-section {
+  background: #f7f7f7;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.booking-section h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.booking-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.booking-form .form-group {
+  margin-bottom: 15px;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  background: green;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: darkgreen;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 40px 20px;
+  background: #e9f5ff;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial span {
+  font-weight: 700;
+  color: #555;
+}
+
+/* Map Section */
+.map-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: #fdfdfd;
+}
+
+.map-section h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* Footer */
+.footer {
+  background: #0033cc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-title h1 {
+    font-size: 36px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cylinder-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+  }
+}
