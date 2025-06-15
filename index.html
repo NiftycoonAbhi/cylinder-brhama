@@ -752,6 +752,60 @@
       </div>
     </section>
 
+    <!-- Image Display Section -->
+    <!-- Enhanced Image Display Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+                <!-- Enhanced Figure with hover effects -->
+                <figure class="figure position-relative overflow-hidden rounded-4 shadow-lg">
+                    <!-- Image with zoom effect on hover -->
+                    <img src="images/banner.jpg" 
+                         class="figure-img img-fluid w-100 transition-all" 
+                         alt="Brahma Enterprises Commercial Gas Solutions"
+                         style="transform: scale(1); transition: transform 0.5s ease;">
+                    
+                    <!-- Overlay caption with gradient background -->
+                    <figcaption class="figure-caption position-absolute bottom-0 start-0 end-0 p-4 text-white" 
+                                style="
+                                    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+                                    transform: translateY(0);
+                                    transition: transform 0.3s ease;
+                                ">
+                        <div class="container">
+                            <h3 class="fw-bold mb-2">Brahma Enterprises</h3>
+                            <p class="mb-0">Your Trusted Partner for Commercial Gas Solutions – Harugeri</p>
+                            <p class="mb-0"><small>Safe • Reliable • On Time</small></p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Custom hover effects */
+    .figure:hover img {
+        transform: scale(1.03) !important;
+    }
+    
+    .figure:hover .figure-caption {
+        transform: translateY(0) !important;
+    }
+    
+    /* Initial state for caption (hidden slightly) */
+    .figure-caption {
+        transform: translateY(20px);
+    }
+    
+    /* Smooth transitions */
+    .transition-all {
+        transition: all 0.3s ease;
+    }
+</style>
+
     <!-- Footer -->
     <footer class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-12">
     
